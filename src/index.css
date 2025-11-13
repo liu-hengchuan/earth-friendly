@@ -1,0 +1,25 @@
+/* Import original CSS files */
+@import '../css/bootstrap.min.css';
+@import '../css/animate.min.css';
+@import '../css/javascript-plugins-bundle.css';
+@import '../js/menuzord/css/menuzord.css';
+@import '../css/style-main.css';
+@import '../css/menuzord-skins/menuzord-rounded-boxed.css';
+@import '../css/responsive.css';
+@import '../css/colors/theme-skin-color-set1.css';
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic styles */
+#root {
+  height: 100%;
+}
