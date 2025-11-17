@@ -1,0 +1,22 @@
+{
+  "name": "earth-friendly",
+  "version": "1.0.0",
+  "description": "Charity & Fundraising Responsive HTML Template",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "1.7.8",
+    "vue": "^2.7.14",
+    "vue-router": "3.6.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.0.3",
+    "moment": "^2.30.1",
+    "vite": "^4.3.9",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
