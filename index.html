@@ -52,9 +52,10 @@
 <!-- REVOLUTION JS FILES -->
 <script src="js/revolution-slider/js/revolution.tools.min.js"></script>
 <script src="js/revolution-slider/js/rs6.min.js"></script>
-<script src="js/revolution-slider/extra-rev-slider1.js"></script>
+<script src="js/revolution-slider/extra-rev-slider2.js"></script>
 
 <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,7 +64,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="tm-container-1340px has-side-panel side-panel-right">
+<body class="tm-container-1340px has-side-panel side-panel-right switchable-logo">
 <div class="side-panel-body-overlay"></div>
 <div id="side-panel-container" class="dark" data-tm-bg-img="images/side-push-bg.jpg">
   <div class="side-panel-wrap">
@@ -124,32 +125,7 @@
 </div>
 <div id="wrapper" class="clearfix">
   <!-- Header -->
-  <header id="header" class="header header-layout-type-header-2rows">
-    <div class="header-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
-            <ul class="element contact-info">
-              <li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> Tel: +440-98-5298</li>
-              <li class="contact-email"><i class="fa fa-envelope font-icon sm-display-block"></i> info@example.com</li>
-              <li class="contact-address"><i class="fa fa-map font-icon sm-display-block"></i> 121 King Street, Melbourne</li>
-            </ul>
-          </div>
-          <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
-            <div class="element pt-0 pb-0">
-              <ul class="styled-icons icon-dark icon-theme-colored1 icon-circled clearfix">
-                <li><a class="social-link" href="#" ><i class="fab fa-facebook"></i></a></li>
-                <li><a class="social-link" href="#" ><i class="fab fa-twitter"></i></a></li>
-                <li><a class="social-link" href="#" ><i class="fab fa-youtube"></i></a></li>
-              </ul>
-            </div>
-            <div class="element pt-0 pt-lg-10 pb-0">
-              <a href="ajax-load/form-appointment.html" class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <header id="header" class="header header-layout-type-header-1rows-floating-header header-bg-dark-shadow">
     <div class="header-nav tm-enable-navbar-hide-on-scroll">
       <div class="header-nav-wrapper navbar-scrolltofixed">
         <div class="menuzord-container header-nav-container">
@@ -157,11 +133,14 @@
             <div class="row header-nav-col-row">
               <div class="col-sm-auto align-self-center">
                 <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
-                  <img class="logo-default logo-1x" src="images/logo-wide@2x.png" alt="Logo">
-                  <img class="logo-default logo-2x retina" src="images/logo-wide@2x.png" alt="Logo">
+                  <img class="logo-light logo-default logo-1x" src="images/logo-wide-white.png" alt="Logo">
+                  <img class="logo-light logo-default logo-2x retina" src="images/logo-wide-white@2x.png" alt="Logo">
+
+                  <img class="logo-dark logo-default logo-1x" src="images/logo-wide@2x.png" alt="Logo">
+                  <img class="logo-dark logo-default logo-2x retina" src="images/logo-wide@2x.png" alt="Logo">
                 </a>
               </div>
-              <div class="col-sm-auto ms-auto pr-0 align-self-center">
+              <div class="col-sm-auto ms-auto pe-0 align-self-center">
                 <nav id="top-primary-nav" class="menuzord theme-color1" data-effect="fade" data-animation="none" data-align="right">
                   <ul id="main-nav" class="menuzord-menu">
                     <li class="active">
@@ -204,7 +183,7 @@
                   <li class="hidden-mobile-mode">
                     <div class="top-nav-mini-cart-icon-container">
                       <div class="top-nav-mini-cart-icon-contents">
-                        <a class="mini-cart-icon" href="#" title="View your shopping cart"><i class="fa fa-shopping-cart"></i><span class="items-count">1</span> <span class="cart-quick-info">1 item - <span class="amount"><span class="currencySymbol">&pound;</span>18.00</span></span></a>
+                        <a class="mini-cart-icon" href="index-mp-layout1.html" title="View your shopping cart"><i class="fa fa-shopping-cart"></i><span class="items-count">1</span> <span class="cart-quick-info">1 item - <span class="amount"><span class="currencySymbol">&pound;</span>18.00</span></span></a>
                         <div class="dropdown-content">
                           <ul class="cart_list product_list_widget ">
                             <li class="mini_cart_item">
@@ -217,8 +196,8 @@
                           <p class="total"> <strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><span class="currencySymbol">&pound;</span>18.00</span> </p>
                           <div class="buttons cart-action-buttons">
                             <div class="row">
-                              <div class="col-6 pe-1"><a href="#" class="btn btn-theme-colored2 btn-block btn-sm wc-forward">View Cart</a></div>
-                              <div class="col-6 ps-1"><a href="#" class="btn btn-theme-colored1 btn-block btn-sm checkout wc-forward">Checkout</a></div>
+                              <div class="col-6 pe-0"><a href="shop-cart.html" class="btn btn-theme-colored2 btn-block btn-sm wc-forward">View Cart</a></div>
+                              <div class="col-6 ps-1"><a href="shop-checkout.html" class="btn btn-theme-colored1 btn-block btn-sm checkout wc-forward">Checkout</a></div>
                             </div>
                           </div>
                         </div>
@@ -559,131 +538,120 @@
     <!-- Section: home End -->
 
     <!-- Section: About -->
-    <section>
-      <div class="container pt-0">
+    <section data-tm-bg-color="#f4f3ef">
+      <div class="container pt-0" data-tm-padding-bottom="180">
         <div class="section-content about-current-theme-style1">
           <div class="row">
-            <div class="col-xl-6 offset-xl-6">
-              <div class="feature-causes-current-style1 bg-theme-colored1 pl-xs-15">
-                <h4 class="causes-title mt-0 text-white">Save the World</h4>
-                <h6 class="causes-goal mt-0 mb-40 text-theme-colored2 font-weight-500">Goal: 3600.00 USD</h6>
-                <p class="mb-0 text-white mb-xs-25">Dignissim cras tincidunt lobortis feugiat vivam at augue eget Id consectetur lorem ipsum is simply free text purus ut integer orci</p>
-                <div class="tm-sc-progress progress-item progress-item-current-style1 m-0">
-                  <div class="progress-title">
-                    <h6 class="text-white title m-0">Raised</h6>
-                  </div>
-                  <div class="tm-sc-progress-bar progress-bar-fixed-right-percent" data-percent="56" data-bar-height="35">
-                    <div class="progress-title-holder">
-                      <span class="percent">
-                        <span class="symbol-left"></span>
-                        <span class="value">56</span>
-                        <span class="symbol-right">%</span>
-                      </span>
-                    </div>
-                    <div class="progress-holder">
-                      <div class="progress-content bg-theme-colored2"></div>
-                    </div>
-                  </div>
-                </div>
-                <a href="page-contact.html" class="btn btn-md btn-theme-colored3 btn-flat">Donate</a>
-              </div>
-            </div>
             <div class="col-lg-6">
-              <div class="about-image-layer1 rs-about-image-layer1">
-                <div class="about-thumb">
-                  <img src="images/about/about1.jpg" alt="Image">
-                </div>
-                <div class="trusted-number">
-                  <p>Trusted by</p>
-                  <h4 class="number m-0">4890</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="about-content pr-30 pl-30 pl-md--0 pr-md--0" data-tm-padding-top="55">
+              <div class="mt-60">
                 <div class="tm-sc-section-title section-title mb-50">
                   <div class="title-wrapper mb-0">
                     <div class="title-icon-img">
                       <img src="images/icons/title-icon.png" alt="Image">
                     </div>
-                    <h2 class="title">We Have the Power Today to Change Tomorrow!</h2>
-                    <p class="paragraph mb-0">Lorem ipsum dolor sit amet consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn cras tincidunt lobortis feugiat vivam at augue eget</p>
+                    <h2 class="title">It’s Time to Change the World Together!</h2>
                   </div>
                 </div>
-                <a href="page-about.html" class="btn btn-lg btn-theme-colored1 btn-flat">Discover More</a>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="thumb">
+                      <img src="images/photos/divider-02.jpg" alt="Image">
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="content mt-lg-40">
+                      <h6 class="text-theme-colored1 font-weight-500 mt-0 mb-30 mb-lg-10">Green. That’s how we’d like the world to be.</h6>
+                      <p class="font-size-18">Lorem ipsum dolor sit amet notted adi pisicing elit sed do tempor inci labore dolore nsectetur cing elituspe ndisse suscipit sagitis</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-5 offset-xl-1">
+              <div class="donate-form-current-style1 bg-theme-colored1 position-relative z-index-1">
+                <div class="pt-60 pr-70 pb-60 pl-70 pt-xs-30 pr-xs-20 pl-xs-20 pb-xs-40 text-center">
+                  <p class="font-size-18 text-white">Lorem ipsum dolor sit conse ctetur elit ipmon sed tempor ut labore.</p>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <div class="mb-3 mt-30 mb-30">
+                      <select class="form-control" name="item_name">
+                        <option value="Educate Children">Educate Children</option>
+                        <option value="Child Camps">Child Camps</option>
+                        <option value="Clean Water for Life">Clean Water for Life</option>
+                        <option value="Campaign for Child Poverty">Campaign for Child Poverty</option>
+                      </select>
+                    </div>
+                    <div class="mb-30">
+                      <label><strong>How much do you want to donate?</strong></label>
+                      <br>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" checked="" name="amount" id="amountRadio1" value="20">
+                        <label class="form-check-label" for="amountRadio1">$20</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="amount" id="amountRadio2" value="50">
+                        <label class="form-check-label" for="amountRadio2">$50</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="amount" id="amountRadio3" value="100">
+                        <label class="form-check-label" for="amountRadio3">$100</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="amount" id="amountRadio4" value="200">
+                        <label class="form-check-label" for="amountRadio4">$200</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="amount" id="amountRadio5" value="500">
+                        <label class="form-check-label" for="amountRadio5">$500</label>
+                      </div>
+                    </div>
+                    <input type="hidden" name="cmd" value="_donations">
+                    <input type="hidden" name="business" value="accounts@thememascot.com">
+                    <input type="hidden" name="no_shipping" value="1">
+                    <input type="hidden" name="cn" value="Comments...">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="tax" value="0">
+                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="bn" value="PP-DonationsBF">
+                    <input type="hidden" name="return" value="http://www.yoursite.com/thankyou.html">
+                    <input type="hidden" name="cancel_return" value="http://www.yoursite.com/paymentcancel.html">
+                    <input type="hidden" name="notify_url" value="http://www.yoursite.com/notifypayment.php">
+                    <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="tm-floating-objects">
-        <span class="floating-object-1" data-tm-bg-img="images/shape/about-01.png" data-tm-width="256" data-tm-height="349" data-tm-top="auto" data-tm-bottom="-8" data-tm-left="75" data-tm-opacity="1"></span>
-        <span class="floating-object-2 tm-animation-floating" data-tm-bg-img="images/shape/about-02.png" data-tm-width="90" data-tm-height="80" data-tm-top="150" data-tm-bottom="auto" data-tm-left="180" data-tm-opacity="1"></span>
-        <span class="floating-object-3" data-tm-bg-img="images/shape/about-03.png" data-tm-width="174" data-tm-height="258" data-tm-top="auto" data-tm-bottom="0" data-tm-right="100" data-tm-left="auto" data-tm-opacity="1"></span>
-        <span class="floating-object-4 tm-animation-slide-horizontal" data-tm-bg-img="images/shape/about-04.png" data-tm-width="90" data-tm-height="80" data-tm-top="40%" data-tm-bottom="auto" data-tm-right="120" data-tm-left="auto" data-tm-opacity="1"></span>
       </div>
     </section>
 
-    <!-- Section: Service -->
-    <section data-tm-bg-color="#f4f3ef">
-      <div class="container">
-        <div class="tm-sc-section-title section-title text-center mb-50">
-          <div class="row">
-            <div class="col-lg-5 m-auto">
-              <div class="title-wrapper mb-0">
-                <div class="title-icon-img line-height-1">
-                  <img src="images/icons/title-icon.png" alt="Image">
+    <!-- Start Divider -->
+    <section>
+      <div class="container pt-0 pb-0" data-tm-margin-top="-70">
+        <div class="row">
+          <div class="col-12">
+            <div class="contact-info-current-style1">
+              <div class="contact-info-item">
+                <div class="icon"><img src="images/icons/c4.png" alt="Icon"></div>
+                <div class="text">
+                  <h5 class="title m-0"><a href="tel:+510-455-6735">+510-455-6735</a></h5>
+                  <span>Phone line</span>
                 </div>
-                <h2 class="title">What We Do</h2>
-                <p class="paragraph mb-0">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit.</p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="col-sm-6 col-xl-3">
-              <div class="service-item-current-style1 text-center position-relative z-index-1 overflow-hidden tm-animation move-right animate mb-lg-30">
-                <div class="service-icon mb-25 text-center d-inline-block">
-                  <img class="icon" src="images/icons/s01.png" alt="Icon">
+              <div class="contact-info-item">
+                <div class="icon"><img src="images/icons/c5.png" alt="Icon"></div>
+                <div class="text">
+                  <h5 class="title m-0"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></h5>
+                  <span>Email address</span>
                 </div>
-                <h6 class="service-title mb-25 mt-0 mb-lg--0">Eco System</h6>
-                <p class="service-details font-size-15 mb-0">Lorem ipsum is free text used by neque porro est qui dolorem ipsum quia.</p>
-                <div class="floating-object-1 tm-animation-floating" data-tm-bg-img="images/shape/service-01.png"></div>
-                <div class="line-style"></div>
               </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="service-item-current-style1 text-center position-relative z-index-1 overflow-hidden tm-animation move-right2 animate mb-lg-30">
-                <div class="service-icon mb-25 text-center d-inline-block">
-                  <img class="icon" src="images/icons/s02.png" alt="Icon">
+              <div class="contact-info-item">
+                <div class="icon"><img src="images/icons/c6.png" alt="Icon"></div>
+                <div class="text">
+                  <h5 class="title m-0">20 Broklyn Street, USA</h5>
+                  <span>Visit us</span>
                 </div>
-                <h6 class="service-title mb-25 mt-0 mb-lg--0">Recycling</h6>
-                <p class="service-details font-size-15 mb-0">Lorem ipsum is free text used by neque porro est qui dolorem ipsum quia.</p>
-                <div class="floating-object-1 tm-animation-spin-half" data-tm-bg-img="images/shape/service-01.png"></div>
-                <div class="line-style"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="service-item-current-style1 text-center position-relative z-index-1 overflow-hidden tm-animation move-right3 animate mb-lg-30">
-                <div class="service-icon mb-25 text-center d-inline-block">
-                  <img class="icon" src="images/icons/s03.png" alt="Icon">
-                </div>
-                <h6 class="service-title mb-25 mt-0 mb-lg--0">Water Refine</h6>
-                <p class="service-details font-size-15 mb-0">Lorem ipsum is free text used by neque porro est qui dolorem ipsum quia.</p>
-                <div class="floating-object-1 tm-animation-floating" data-tm-bg-img="images/shape/service-01.png"></div>
-                <div class="line-style"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-              <div class="service-item-current-style1 text-center position-relative z-index-1 overflow-hidden tm-animation move-right4 animate mb-lg-30">
-                <div class="service-icon mb-25 text-center d-inline-block">
-                  <img class="icon" src="images/icons/s04.png" alt="Icon">
-                </div>
-                <h6 class="service-title mb-25 mt-0 mb-lg--0">Save Animals</h6>
-                <p class="service-details font-size-15 mb-0">Lorem ipsum is free text used by neque porro est qui dolorem ipsum quia.</p>
-                <div class="floating-object-1 tm-animation-spin-half" data-tm-bg-img="images/shape/service-01.png"></div>
-                <div class="line-style"></div>
               </div>
             </div>
           </div>
@@ -694,121 +662,159 @@
     <!-- Section: Campaigns -->
     <section>
       <div class="container">
+        <div class="tm-sc-section-title section-title text-center mb-50">
+          <div class="row">
+            <div class="col-lg-5 m-auto">
+              <div class="title-wrapper mb-0">
+                <div class="title-icon-img line-height-1">
+                  <img src="images/icons/title-icon.png" alt="Image">
+                </div>
+                <h2 class="title">Our Campaigns</h2>
+                <p class="paragraph mb-0">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="section-content">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="tm-sc-section-title section-title mb-0 pr-70 pr-lg--0 mb-md-40">
-                <div class="title-wrapper mb-0">
-                  <div class="title-icon-img">
-                    <img src="images/icons/title-icon.png" alt="Image">
+            <div class="col-lg-12">
+              <div class="causes-item-current-style1 mb-30">
+                <div class="causes-item">
+                  <div class="row m-0">
+                    <div class="col-lg-6 p-0">
+                      <div class="causes-details h-100 pl-80 pr-100 pr-lg-30 pl-lg-30 pt-lg-30 pb-md-40 pt-md-40" data-tm-padding-top="75">
+                        <h5 class="causes-title rs-causes-title mt-0 mb-15"><a href="page-campaign-details.html">Help the Endangered Species Today</a></h5>
+                        <p class="font-size-18 mb-40">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit met entum estibulum dignissim posuere cubilia durae.</p>
+                        <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
+                          <div class="progress-title">
+                            <h6 class="title m-0">Raised</h6>
+                          </div>
+                          <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="77" data-bar-height="9">
+                            <div class="progress-title-holder">
+                              <span class="percent">
+                                <span class="symbol-left"></span>
+                                <span class="value">77</span>
+                                <span class="symbol-right">%</span>
+                              </span>
+                            </div>
+                            <div class="progress-holder">
+                              <div class="progress-content bg-theme-colored1"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="donation-goal">
+                          <div class="goal">
+                            <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                      <div class="causes-thumb position-relative">
+                        <img src="images/causes/c04.jpg" alt="Image" class="w-100">
+                        <div class="rotate-content-current-style1 font-size-14 letter-space-2 font-weight-700 text-uppercase bg-theme-colored1 text-white">Featured Campaign</div>
+                      </div>
+                    </div>
                   </div>
-                  <h2 class="title">Our Fundraising Campaigns</h2>
-                  <p class="paragraph mb-0">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="causes-carousel-current-style1">
-                <div class="tm-owl-carousel-2col owl-carousel owl-theme" data-autoplay="false" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30" data-stagepadding="20" data-nav="true">
-                  <div class="item">
-                    <div class="causes-item-current-style1">
-                      <div class="causes-item">
-                        <div class="causes-thumb">
-                          <img src="images/causes/c01.jpg" alt="Image" class="w-100">
+            <div class="col-md-6 col-lg-4">
+              <div class="causes-item-current-style1 mb-md-30">
+                <div class="causes-item">
+                  <div class="causes-thumb">
+                    <img src="images/causes/c01.jpg" alt="Image" class="w-100">
+                  </div>
+                  <div class="causes-details">
+                    <h5 class="causes-title mt-0 mb-20"><a href="page-campaign-details.html">Let’s Fight for Global Warnings</a></h5>
+                    <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
+                      <div class="progress-title">
+                        <h6 class="title m-0">Raised</h6>
+                      </div>
+                      <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="23" data-bar-height="9">
+                        <div class="progress-title-holder">
+                          <span class="percent">
+                            <span class="symbol-left"></span>
+                            <span class="value">23</span>
+                            <span class="symbol-right">%</span>
+                          </span>
                         </div>
-                        <div class="causes-details">
-                          <h5 class="causes-title mt-0 mb-20"><a href="page-campaign-details.html">Eco System for Global Warnings</a></h5>
-                          <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
-                            <div class="progress-title">
-                              <h6 class="title m-0">Raised</h6>
-                            </div>
-                            <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="23" data-bar-height="9">
-                              <div class="progress-title-holder">
-                                <span class="percent">
-                                  <span class="symbol-left"></span>
-                                  <span class="value">23</span>
-                                  <span class="symbol-right">%</span>
-                                </span>
-                              </div>
-                              <div class="progress-holder">
-                                <div class="progress-content bg-theme-colored1"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="donation-goal">
-                            <div class="goal">
-                              <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
-                            </div>
-                          </div>
+                        <div class="progress-holder">
+                          <div class="progress-content bg-theme-colored1"></div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="item">
-                    <div class="causes-item-current-style1">
-                      <div class="causes-item">
-                        <div class="causes-thumb">
-                          <img src="images/causes/c02.jpg" alt="Image" class="w-100">
-                        </div>
-                        <div class="causes-details">
-                          <h5 class="causes-title mt-0 mb-20"><a href="page-campaign-details.html">Let’s Fight for Save Animals</a></h5>
-                          <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
-                            <div class="progress-title">
-                              <h6 class="title m-0">Raised</h6>
-                            </div>
-                            <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="23" data-bar-height="9">
-                              <div class="progress-title-holder">
-                                <span class="percent">
-                                  <span class="symbol-left"></span>
-                                  <span class="value">23</span>
-                                  <span class="symbol-right">%</span>
-                                </span>
-                              </div>
-                              <div class="progress-holder">
-                                <div class="progress-content bg-theme-colored1"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="donation-goal">
-                            <div class="goal">
-                              <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="donation-goal">
+                      <div class="goal">
+                        <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="item">
-                    <div class="causes-item-current-style1">
-                      <div class="causes-item">
-                        <div class="causes-thumb">
-                          <img src="images/causes/c03.jpg" alt="Image" class="w-100">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="causes-item-current-style1 mb-sm-30">
+                <div class="causes-item">
+                  <div class="causes-thumb">
+                    <img src="images/causes/c02.jpg" alt="Image" class="w-100">
+                  </div>
+                  <div class="causes-details">
+                    <h5 class="causes-title mt-0 mb-20"><a href="page-campaign-details.html">Eco System for Global Warnings</a></h5>
+                    <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
+                      <div class="progress-title">
+                        <h6 class="title m-0">Raised</h6>
+                      </div>
+                      <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="53" data-bar-height="9">
+                        <div class="progress-title-holder">
+                          <span class="percent">
+                            <span class="symbol-left"></span>
+                            <span class="value">53</span>
+                            <span class="symbol-right">%</span>
+                          </span>
                         </div>
-                        <div class="causes-details">
-                          <h5 class="causes-title mt-0 mb-20"><a href="page-campaign-details.html">Let’s Fight for Global Warnings</a></h5>
-                          <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
-                            <div class="progress-title">
-                              <h6 class="title m-0">Raised</h6>
-                            </div>
-                            <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="23" data-bar-height="9">
-                              <div class="progress-title-holder">
-                                <span class="percent">
-                                  <span class="symbol-left"></span>
-                                  <span class="value">23</span>
-                                  <span class="symbol-right">%</span>
-                                </span>
-                              </div>
-                              <div class="progress-holder">
-                                <div class="progress-content bg-theme-colored1"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="donation-goal">
-                            <div class="goal">
-                              <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
-                            </div>
-                          </div>
+                        <div class="progress-holder">
+                          <div class="progress-content bg-theme-colored1"></div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="donation-goal">
+                      <div class="goal">
+                        <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="causes-item-current-style1">
+                <div class="causes-item">
+                  <div class="causes-thumb">
+                    <img src="images/causes/c03.jpg" alt="Image" class="w-100">
+                  </div>
+                  <div class="causes-details">
+                    <h5 class="causes-title mt-0 mb-20"><a href="page-campaign-details.html">Let’s Fight for Global Warnings</a></h5>
+                    <div class="tm-sc-progress progress-item progress-item-current-style2 m-0">
+                      <div class="progress-title">
+                        <h6 class="title m-0">Raised</h6>
+                      </div>
+                      <div class="tm-sc-progress-bar progress-bar-fixed-right-percent mb-10" data-percent="70" data-bar-height="9">
+                        <div class="progress-title-holder">
+                          <span class="percent">
+                            <span class="symbol-left"></span>
+                            <span class="value">70</span>
+                            <span class="symbol-right">%</span>
+                          </span>
+                        </div>
+                        <div class="progress-holder">
+                          <div class="progress-content bg-theme-colored1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="donation-goal">
+                      <div class="goal">
+                        <p class="mb-0 text-theme-colored3 font-weight-700">Goal: <span class="text-theme-colored1">3600.00 USD</span></p>
                       </div>
                     </div>
                   </div>
@@ -819,71 +825,266 @@
         </div>
       </div>
       <div class="tm-floating-objects">
-        <span class="floating-object-1" data-tm-bg-img="images/shape/causes-06.png" data-tm-width="382" data-tm-height="440" data-tm-top="auto" data-tm-bottom="-4px" data-tm-left="25" data-tm-opacity="1"></span>
+        <span class="floating-object-1" data-tm-bg-img="images/shape/causes-01.png" data-tm-width="185" data-tm-height="253" data-tm-top="auto" data-tm-bottom="-3" data-tm-left="50" data-tm-opaciy="1"></span>
+        <span class="floating-object-2 tm-animation-slide-horizontal" data-tm-bg-img="images/shape/causes-02.png" data-tm-width="90" data-tm-height="80" data-tm-top="160" data-tm-bottom="auto" data-tm-left="170" data-tm-opaciy="1"></span>
+        <span class="floating-object-3" data-tm-bg-img="images/shape/causes-03.png" data-tm-width="136" data-tm-height="202" data-tm-top="auto" data-tm-bottom="0" data-tm-right="60" data-tm-opaciy="1"></span>
+        <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/shape/causes-04.png" data-tm-width="147" data-tm-height="139" data-tm-top="20" data-tm-bottom="auto" data-tm-left="auto" data-tm-right="160" data-tm-opaciy="1"></span>
+        <span class="floating-object-5 tm-animation-random" data-tm-bg-img="images/shape/causes-05.png" data-tm-width="42" data-tm-height="42" data-tm-top="auto" data-tm-bottom="28%" data-tm-left="auto" data-tm-right="100" data-tm-opaciy="1"></span>
+      </div>
+    </section>
+
+    <!-- Section: Events -->
+    <section class="bg-theme-colored1 z-index-1">
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="tm-sc-section-title section-title section-typo-light mb-50">
+                <div class="title-wrapper mb--0">
+                  <div class="title-icon-img">
+                    <img src="images/icons/title-icon02.png" alt="Image">
+                  </div>
+                  <h2 class="title">Ecological Environmental Upcoming Events</h2>
+                  <p class="paragraph mb--0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+              </div>
+              <a href="news-details.html" class="btn btn-lg btn-theme-colored2 btn-flat mb-md-30">View All Events</a>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <div class="upcoming-events-current-style1 pb-xs--0 mb-10">
+                <div class="row">
+                  <div class="col-sm-6 col-md-8">
+                    <div class="event-details d-flex flex-column justify-content-center h-100">
+                      <div class="event-time text-theme-colored1 font-size-13 font-weight-700 letter-space-2 text-uppercase">
+                        <span class="mr-15">Admin</span>
+                        <span>13:30 pm</span>
+                      </div>
+                      <h5 class="event-title rs-event-title font-size-20 line-height-1-5 m--0"><a href="news-details.html">International Day for Ecology System</a></h5>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 pl--0 pl-xs-10 pr-xs-10">
+                    <div class="thumb">
+                      <img class="w-100 img-fullwidth" src="images/events/01.jpg" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upcoming-events-current-style1 pb-xs--0 mb-10">
+                <div class="row">
+                  <div class="col-sm-6 col-md-8">
+                    <div class="event-details d-flex flex-column justify-content-center h-100">
+                      <div class="event-time text-theme-colored1 font-size-13 font-weight-700 letter-space-2 text-uppercase">
+                        <span class="mr-15">Admin</span>
+                        <span>12:00 am</span>
+                      </div>
+                      <h5 class="event-title rs-event-title font-size-20 line-height-1-5 m--0"><a href="news-details.html">International Day for Biological Diversity</a></h5>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 pl--0 pl-xs-10 pr-xs-10">
+                    <div class="thumb">
+                      <img class="w-100 img-fullwidth" src="images/events/02.jpg" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upcoming-events-current-style1 pb-xs--0">
+                <div class="row">
+                  <div class="col-sm-6 col-md-8">
+                    <div class="event-details d-flex flex-column justify-content-center h-100">
+                      <div class="event-time text-theme-colored1 font-size-13 font-weight-700 letter-space-2 text-uppercase">
+                        <span class="mr-15">Admin</span>
+                        <span>11:12 am</span>
+                      </div>
+                      <h5 class="event-title rs-event-title font-size-20 line-height-1-5 m--0"><a href="news-details.html">International Day for Global Warnings</a></h5>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 pl--0 pl-xs-10 pr-xs-10">
+                    <div class="thumb">
+                      <img class="w-100 img-fullwidth" src="images/events/03.jpg" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tm-floating-objects">
+        <span class="floating-object-1 z-index--1" data-tm-bg-img="images/shape/events-01.png" data-tm-width="460" data-tm-height="530" data-tm-top="auto" data-tm-bottom="0" data-tm-left="45" data-tm-opacity="1"></span>
+        <span class="floating-object-2 z-index--1" data-tm-bg-img="images/shape/events-02.png" data-tm-width="115" data-tm-height="190" data-tm-top="auto" data-tm-bottom="-4" data-tm-left="35%" data-tm-opacity="1"></span>
+        <span class="floating-object-3 tm-animation-floating z-index--1" data-tm-bg-img="images/shape/events-03.png" data-tm-width="90" data-tm-height="80" data-tm-top="26%" data-tm-bottom="auto" data-tm-right="7%" data-tm-opacity="1"></span>
       </div>
     </section>
 
     <!-- Start Divider -->
-    <section class="text-center bg-img-cover bg-img-center-top" data-tm-bg-img="images/bg/bg1.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-8 m-auto text-center">
-            <div class="m-auto mb-25" data-tm-width="75" data-tm-height="63" data-tm-bg-img="images/icons/heart01.png"></div>
-            <h2 class="text-white rs-divider-title font-weight-900 mb-40 mt-0">We Use the Support of 3,4500 People to Clean the Air and Safe Rivers</h2>
-            <a href="news-details.html" class="btn btn-lg btn-theme-colored2 btn-flat">Start Donating</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Project -->
-    <section>
-      <div class="container">
-        <div class="section-content">
+    <section class="bg-img-top bg-img-cover" data-tm-bg-img="images/bg/bg4.jpg">
+      <div class="container pt-80 pb-70">
+        <div class="section-content pt-1">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="layer-image-wrapper layer-image-current-style1 position-relative mr-70 mr-lg--0 mb-md-60">
-                <div class="layer-image mr-60 mr-sm--0">
-                  <img class="w-100" src="images/photos/project-01.jpg" alt="Image">
-                </div>
-                <div class="successfull-project-box-style1 bg-theme-colored1">
-                  <img class="icon mb-5" src="images/icons/p01.png" alt="Image">
-                  <h2 class="success-number text-white mt-0 mb-5">8800</h2>
-                  <h6 class="title text-theme-colored2 m-0">Successfully<br>Project</h6>
-                </div>
-                <div class="become-volunteer-style1">
-                  <a href="news-details.html">Let’s Become a Volunteer <i class="fa fa-angle-right"></i></a>
+            <div class="col-sm-12">
+              <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
+                <div class="owl-carousel owl-theme tm-owl-carousel-5col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="150" data-stagepadding="0" data-laptop="4">
+                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/white-1.png' alt='Image' /> </a></div>
+                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/white-1.png' alt='Image' /> </a></div>
+                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/white-1.png' alt='Image' /> </a></div>
+                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/white-1.png' alt='Image' /> </a></div>
+                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/white-1.png' alt='Image' /> </a></div>
+                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/white-1.png' alt='Image' /> </a></div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="tm-sc-section-title section-title mb-50">
-                <div class="title-wrapper mb-0">
-                  <div class="title-icon-img">
-                    <img src="images/icons/title-icon.png" alt="Image">
+          </div>
+        </div>
+      </div>
+      <hr class="m-0 hr-line-light" data-tm-padding-bottom="215">
+    </section>
+
+    <!-- Start Project -->
+    <section>
+      <div class="container pt-0" data-tm-margin-top="-117">
+        <div class="section-content pt-1">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="">
+                <div class="project-tab-style1">
+                  <ul class="nav nav-tabs mt-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active show" id="donation-tab" data-bs-toggle="tab" href="#donation" role="tab" aria-controls="donation" aria-selected="false">Eco Sysatem</a>
+                    </li>
+                    <li class="nav-item active" role="presentation">
+                      <a class="nav-link" id="communtiy-tab" data-bs-toggle="tab" href="#communtiy" role="tab" aria-controls="communtiy" aria-selected="true">Save the Forest</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="volunteer-tab" data-bs-toggle="tab" href="#volunteer" role="tab" aria-controls="volunteer" aria-selected="false">Recyling Process</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-100 p-0" id="myTabContent">
+                    <div class="tab-pane fade active show" id="donation" role="tabpanel" aria-labelledby="donation-tab">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="thumb pr-70 pr-lg--0">
+                            <img class="w-100" src="images/photos/project-02.jpg" alt="Image">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="tab-content-inner m-0 mt-md-40">
+                            <h3 class="font-size-29 text-theme-colored1 font-weight-500 mt-0 mb-30 mb-lg-10">To Save Our Ecology, We Must Move Beyond Hope</h3>
+                            <p class="font-size-18 mt-0 mb-15">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour or randomised words which don't look even believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <div class="row">
+                              <div class="col-xl-6">
+                                <div class="iconbox-current-style1 mt-40 mb-20 mt-lg-10">
+                                  <div class="icon mr-20">
+                                    <img src="images/icons/d02.png" alt="Icon">
+                                    <div class="icon-shape bg-theme-colored2"></div>
+                                  </div>
+                                  <div class="content">
+                                    <h6 class="title m-0">Focus on best environmental practices</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-6">
+                                <div class="iconbox-current-style1 mt-40 mb-0 mt-lg-20">
+                                  <div class="icon mr-20">
+                                    <img src="images/icons/d03.png" alt="Icon">
+                                    <div class="icon-shape bg-theme-colored2"></div>
+                                  </div>
+                                  <div class="content">
+                                    <h6 class="title m-0">Help to save the endangered animals</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="communtiy" role="tabpanel" aria-labelledby="communtiy-tab">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="thumb pr-70 pr-lg--0">
+                            <img class="w-100" src="images/photos/project-02.jpg" alt="Image">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="tab-content-inner m-0 mt-md-40">
+                            <h3 class="font-size-29 text-theme-colored1 font-weight-500 mt-0 mb-30 mb-lg-10">To Save Our Ecology, We Must Move Beyond Hope</h3>
+                            <p class="font-size-18 mt-0 mb-15">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour or randomised words which don't look even believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <div class="row">
+                              <div class="col-xl-6">
+                                <div class="iconbox-current-style1 mt-40 mb-20 mt-lg-10">
+                                  <div class="icon mr-20">
+                                    <img src="images/icons/d02.png" alt="Icon">
+                                    <div class="icon-shape bg-theme-colored2"></div>
+                                  </div>
+                                  <div class="content">
+                                    <h6 class="title m-0">Focus on best environmental practices</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-6">
+                                <div class="iconbox-current-style1 mt-40 mb-0 mt-lg-20">
+                                  <div class="icon mr-20">
+                                    <img src="images/icons/d03.png" alt="Icon">
+                                    <div class="icon-shape bg-theme-colored2"></div>
+                                  </div>
+                                  <div class="content">
+                                    <h6 class="title m-0">Help to save the endangered animals</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="volunteer" role="tabpanel" aria-labelledby="volunteer-tab">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="thumb pr-70 pr-lg--0">
+                            <img class="w-100" src="images/photos/project-02.jpg" alt="Image">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="tab-content-inner m-0 mt-md-40">
+                            <h3 class="font-size-29 text-theme-colored1 font-weight-500 mt-0 mb-30 mb-lg-10">To Save Our Ecology, We Must Move Beyond Hope</h3>
+                            <p class="font-size-18 mt-0 mb-15">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form injected humour or randomised words which don't look even believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <div class="row">
+                              <div class="col-xl-6">
+                                <div class="iconbox-current-style1 mt-40 mb-20 mt-lg-10">
+                                  <div class="icon mr-20">
+                                    <img src="images/icons/d02.png" alt="Icon">
+                                    <div class="icon-shape bg-theme-colored2"></div>
+                                  </div>
+                                  <div class="content">
+                                    <h6 class="title m-0">Focus on best environmental practices</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-6">
+                                <div class="iconbox-current-style1 mt-40 mb-0 mt-lg-20">
+                                  <div class="icon mr-20">
+                                    <img src="images/icons/d03.png" alt="Icon">
+                                    <div class="icon-shape bg-theme-colored2"></div>
+                                  </div>
+                                  <div class="content">
+                                    <h6 class="title m-0">Help to save the endangered animals</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h2 class="title">Join the Race to Make the World a Better Place</h2>
-                  <p class="paragraph mb-0">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit. pain and trouble that are bound to ensue weakness of will, which is the same as saying through shrinking.</p>
                 </div>
-              </div>
-              <div class="service-list-item-style1 mb-10">
-                <span class="number">01</span>
-                <p class="mb-0">Save Ecology Begin by Planting Trees</p>
-              </div>
-              <div class="service-list-item-style1 mb-10">
-                <span class="number">02</span>
-                <p class="mb-0">Eco System amet  for Global Warnings</p>
-              </div>
-              <div class="service-list-item-style1">
-                <span class="number">03</span>
-                <p class="mb-0">People to Clean the Air and Safe Rivers</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="tm-floating-objects">
-        <span class="floating-object-1" data-tm-bg-img="images/shape/project-01.png" data-tm-width="411" data-tm-height="298" data-tm-top="auto" data-tm-bottom="-8" data-tm-left="-35" data-tm-opacity="1"></span>
+        <span class="floating-object-1" data-tm-bg-img="images/shape/project-05.png" data-tm-width="411" data-tm-height="298" data-tm-top="auto" data-tm-bottom="-25" data-tm-left="-15" data-tm-opacity="1"></span>
         <span class="floating-object-2" data-tm-bg-img="images/shape/project-02.png" data-tm-width="136" data-tm-height="201" data-tm-top="auto" data-tm-bottom="0" data-tm-right="80" data-tm-left="auto" data-tm-opacity="1"></span>
         <span class="floating-object-3 tm-animation-random" data-tm-bg-img="images/shape/project-03.png" data-tm-width="90" data-tm-height="80" data-tm-top="30%" data-tm-bottom="auto" data-tm-right="120" data-tm-opacity="1"></span>
       </div>
@@ -923,7 +1124,7 @@
               <div class="testimonial-item mb-md-150">
                 <div class="author-text mb-30">I was very impresed by the kologi service lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia.</div>
                 <div class="author-info clearfix">
-                  <h5 class="name mt-0 mb-0">Nike Hardson</h5>
+                  <h5 class="name mt-0 mb-0">Mike Hardson</h5>
                   <span class="job-position">Donater</span>
                 </div>
                 <div class="author-thumb">
@@ -935,7 +1136,7 @@
               <div class="testimonial-item">
                 <div class="author-text mb-30">I was very impresed by the kologi service lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia.</div>
                 <div class="author-info clearfix">
-                  <h5 class="name mt-0 mb-0">Rike Hardson</h5>
+                  <h5 class="name mt-0 mb-0">Mike Hardson</h5>
                   <span class="job-position">Donater</span>
                 </div>
                 <div class="author-thumb">
@@ -948,68 +1149,125 @@
       </div>
     </section>
 
-    <!-- Section: News Letter -->
+    <!-- Section: Feature -->
     <section>
-      <div class="container pb-100" data-tm-padding-top="235">
+      <div class="container-fluid pe-0 ps-0" data-tm-padding-top="295">
         <div class="section-content">
           <div class="row">
-            <div class="col-lg-6 align-self-lg-center align-self-xl-start">
-              <div class="thumb">
-                <img class="w-md-100" src="images/photos/newsletter-01.jpg" alt="Image">
+            <div class="col-lg-6 col-xxl-6">
+              <div class="position-relative bg-theme-colored3 pr-lg-20 mb-md-40 mr-md-15 ml-md-15" data-tm-padding-right="60">
+                <div class="thumb">
+                  <img class="w-100" src="images/photos/divider-03.jpg" alt="Image" data-tm-margin-top="-60">
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-end pb-60 pl-sm-30" data-tm-padding-top="55">
+                  <div class="d-flex align-items-center justify-content-center mr-30 d-xs-none" data-tm-width="58" data-tm-height="52">
+                    <img src="images/icons/d04.png" alt="Image">
+                  </div> 
+                  <h4 class="text-white font-size-30 font-weight-700 mt-0 m-0">30 Years of Making Changes</h4>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="newsletter-form-current-style1 text-center" data-tm-bg-color="#f4f3ef">
-                <h4 class="mt-0 font-size-24 font-weight-900 mb-5">Newsletter Signup</h4>
-                <p class="mt-0 mb-35">Sign up now to get daily latest news & updates from us</p>
-                <!-- Mailchimp Subscription Form-->
-                <form id="mailchimp-subscription-form2" class="newsletter-form m-0 p-0">
-                  <input type="email" id="mce-EMAIL" class="form-control" placeholder="Email Address"  name="EMAIL" value="">
-                  <button type="submit" class="btn btn-lg btn-theme-colored1 btn-flat d-block w-100 mt-20">Subscribe Now</button>
-                </form>
-
-                <!-- Mailchimp Subscription Form Validation-->
-                <script>
-                  (function($) {
-                    $('#mailchimp-subscription-form2').ajaxChimp({
-                        callback: mailChimpCallBack,
-                        url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
-                    });
-
-                    function mailChimpCallBack(resp) {
-                        // Hide any previous response text
-                        var $mailchimpform = $('#mailchimp-subscription-form2'),
-                            $response = '';
-                        $mailchimpform.children(".alert").remove();
-                        if (resp.result === 'success') {
-                            $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                        } else if (resp.result === 'error') {
-                            $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                        }
-                        $mailchimpform.prepend($response);
-                    }
-                  })(jQuery);
-                </script>
+            <div class="col-lg-6 col-xxl-4">
+              <div class="pl-70 pl-lg--0 pl-md-15 pr-md-15">
+                <div class="tm-sc-section-title section-title mb-30">
+                  <div class="title-wrapper mb-0">
+                    <div class="title-icon-img">
+                      <img src="images/icons/title-icon.png" alt="Image">
+                    </div>
+                    <h2 class="title">Together We Can Make a Difference</h2>
+                    <p class="paragraph mb-0">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit.</p>
+                  </div>
+                </div>
+                <div class="list-current-style1 list-current-dark" data-tm-margin-bottom="45">
+                  <ul>
+                    <li><img src="images/icons/list-02.png" alt="Icon">Nsectetur cing elit.</li>
+                    <li><img src="images/icons/list-02.png" alt="Icon">Suspe ndisse suscipit sagittis leo.</li>
+                    <li><img src="images/icons/list-02.png" alt="Icon">Entum estibulum dignissim posuere.</li>
+                    <li><img src="images/icons/list-02.png" alt="Icon">If you are going to use a passage.</li>
+                    <li><img src="images/icons/list-02.png" alt="Icon">Lorem Ipsum generators on the tend to repeat.</li>
+                  </ul>
+                </div>
+                <a href="page-campaign-details.html" class="btn btn-lg btn-theme-colored1 btn-flat">Discover More</a>
               </div>
             </div>
+            <div class="col-xxl-2"></div>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="tm-sc-section-title section-title mb-0" data-tm-margin-top="45">
-                <div class="title-wrapper mb-0">
-                  <div class="row align-items-center">
-                    <div class="col-lg-4 mt-10">
-                      <div class="title-icon-img">
-                        <img src="images/icons/title-icon.png" alt="Image">
-                      </div>
-                      <h2 class="title mt-0">Helping Animals & Working On Environmental Issues</h2>
-                    </div>
-                    <div class="col-lg-4">
-                      <p class="paragraph mb-0">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                    </div>
-                    <div class="col-lg-4">
-                      <img class="w-md-100 mt-md-40" src="images/photos/newsletter-02.jpg" alt="Image">
-                    </div>
+        </div>
+      </div>
+      <div class="tm-floating-objects">
+        <span class="floating-object-1" data-tm-bg-img="images/shape/about-01.png" data-tm-width="256" data-tm-height="349" data-tm-top="auto" data-tm-bottom="-5" data-tm-left="auto" data-tm-right="130" data-tm-opaciy="1"></span>
+        <span class="floating-object-1" data-tm-bg-img="images/shape/about-04.png" data-tm-width="42" data-tm-height="42" data-tm-top="50%" data-tm-bottom="auto" data-tm-left="auto" data-tm-right="130" data-tm-opaciy="1"></span>
+      </div>
+    </section>
+
+    <!-- Start Divider -->
+    <section class="text-center bg-img-cover bg-img-center-top" data-tm-bg-img="images/bg/bg1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 m-auto text-center">
+            <div class="m-auto mb-25" data-tm-width="75" data-tm-height="63" data-tm-bg-img="images/icons/heart01.png"></div>
+            <h2 class="text-white rs-divider-title font-weight-900 mb-40 mt-0">We Use the Support of 3,4500 People to Clean the Air and Safe Rivers</h2>
+            <a href="news-details.html" class="btn btn-lg btn-theme-colored2 btn-flat">Start Donating</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Funfact -->
+    <section>
+      <div class="container pb-0">
+        <div class="section-content bg-theme-colored1 z-index-1 position-relative" data-tm-margin-bottom="-120">
+          <div class="row m--0">
+            <div class="col-lg-5 p--0">
+              <div class="layer-image-wrapper layer-image-current-style3">
+                <div class="layer-image" data-tm-bg-img="images/photos/divider-04.jpg"></div>
+                <div class="contact-info-current-style2">
+                  <div class="icon">
+                    <img src="images/icons/c7.png" alt="Image">
+                  </div>
+                  <div class="content">
+                    <a href="tel:+510-455-6735">+510-455-6735</a>
+                    <span>Phone line</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 p--0">
+              <div class="funfact-grid-wrap">
+                <div class="grid-item">
+                  <div class="tm-sc-funfact funfact funfact-current-style1">
+                    <h2 class="counter">
+                      <span class="animate-number appeared" data-value="100" data-animation-duration="1500">66</span>
+                      <span class="counter-postfix m-0">k</span>
+                    </h2>
+                    <h5 class="title">Funds Raised</h5>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="tm-sc-funfact funfact funfact-current-style1">
+                    <h2 class="counter">
+                      <span class="animate-number appeared" data-value="100" data-animation-duration="1500">88</span>
+                      <span class="counter-postfix m-0">k</span>
+                    </h2>
+                    <h5 class="title">Campaigns Running</h5>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="tm-sc-funfact funfact funfact-current-style1">
+                    <h2 class="counter">
+                      <span class="animate-number appeared" data-value="100" data-animation-duration="1500">94</span>
+                      <span class="counter-postfix m-0">m</span>
+                    </h2>
+                    <h5 class="title">Donations</h5>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="tm-sc-funfact funfact funfact-current-style1">
+                    <h2 class="counter">
+                      <span class="animate-number appeared" data-value="100" data-animation-duration="1500">70</span>
+                      <span class="counter-postfix m-0">+</span>
+                    </h2>
+                    <h5 class="title">Kind Volunteers</h5>
                   </div>
                 </div>
               </div>
@@ -1018,203 +1276,15 @@
         </div>
       </div>
       <div class="tm-floating-objects">
-        <span class="floating-object-1" data-tm-bg-img="images/shape/news-letter-01.png" data-tm-width="185" data-tm-height="253" data-tm-top="auto" data-tm-bottom="-3" data-tm-left="75" data-tm-opacity="1"></span>
-        <span class="floating-object-2 tm-animation-floating" data-tm-bg-img="images/shape/news-letter-02.png" data-tm-width="90" data-tm-height="80" data-tm-top="180" data-tm-bottom="auto" data-tm-right="110" data-tm-opacity="1"></span>
-      </div>
-    </section>
-
-    <!-- Section: Gallery -->
-    <section>
-      <div class="container-fluid p-0">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="tm-sc-gallery gallery-style1-basic gallery-current-style1 owl-carousel owl-theme tm-owl-carousel-4col tm-gallery-carousel" data-margin="6">
-              <!-- Gallery Item Start -->
-              <div class="tm-carousel-item">
-                <div class="tm-gallery">
-                  <div class="tm-gallery-inner">
-                    <div class="thumb">
-                      <a href="#">
-                        <img class="w-100" src="images/gallery/01.jpg" alt="Image">
-                      </a>
-                    </div>
-                    <div class="tm-gallery-content-wrapper">
-                      <div class="tm-gallery-content">
-                        <div class="tm-gallery-content-inner">
-                          <div class="icons-holder-inner">
-                            <div class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                              <a class="lightgallery-trigger styled-icons-item" data-lightbox="image" href="images/gallery/01.jpg"><i class="fas fa-chevron-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Gallery Item End -->
-
-              <!-- Gallery Item Start -->
-              <div class="tm-carousel-item">
-                <div class="tm-gallery">
-                  <div class="tm-gallery-inner">
-                    <div class="thumb">
-                      <a href="#">
-                        <img class="w-100" src="images/gallery/02.jpg" alt="Image">
-                      </a>
-                    </div>
-                    <div class="tm-gallery-content-wrapper">
-                      <div class="tm-gallery-content">
-                        <div class="tm-gallery-content-inner">
-                          <div class="icons-holder-inner">
-                            <div class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                              <a class="lightgallery-trigger styled-icons-item" data-lightbox="image" href="images/gallery/02.jpg"><i class="fas fa-chevron-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Gallery Item End -->
-              
-              <!-- Gallery Item Start -->
-              <div class="tm-carousel-item">
-                <div class="tm-gallery">
-                  <div class="tm-gallery-inner">
-                    <div class="thumb">
-                      <a href="#">
-                        <img class="w-100" src="images/gallery/03.jpg" alt="Image">
-                      </a>
-                    </div>
-                    <div class="tm-gallery-content-wrapper">
-                      <div class="tm-gallery-content">
-                        <div class="tm-gallery-content-inner">
-                          <div class="icons-holder-inner">
-                            <div class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                              <a class="lightgallery-trigger styled-icons-item" data-lightbox="image" href="images/gallery/03.jpg"><i class="fas fa-chevron-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Gallery Item End -->
-              
-              <!-- Gallery Item Start -->
-              <div class="tm-carousel-item">
-                <div class="tm-gallery">
-                  <div class="tm-gallery-inner">
-                    <div class="thumb">
-                      <a href="#">
-                        <img class="w-100" src="images/gallery/04.jpg" alt="Image">
-                      </a>
-                    </div>
-                    <div class="tm-gallery-content-wrapper">
-                      <div class="tm-gallery-content">
-                        <div class="tm-gallery-content-inner">
-                          <div class="icons-holder-inner">
-                            <div class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                              <a class="lightgallery-trigger styled-icons-item" data-lightbox="image" href="images/gallery/04.jpg"><i class="fas fa-chevron-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Gallery Item End -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Divider -->
-
-     <!-- Section: Divider -->
-    <section class="bg-theme-colored1">
-      <div class="section-content">
-        <div class="container pt-110 pb-110">
-          <div class="row align-items-center">
-            <div class="col-lg-9">
-              <div class="d-block d-lg-flex align-items-center">
-                <div class="d-block d-lg-flex align-items-center justify-content-center mr-30 mr-md--0" data-tm-width="80" data-tm-height="72">
-                  <img src="images/icons/d01.png" alt="Icon">
-                </div>
-                <h2 class="text-white font-weight-900 mt--0 mb--0 mt-md-20">Don't Throw Away Recycle for <br>Another Day!</h2>
-              </div>
-            </div>
-            <div class="col-lg-3 text-left text-lg-right mt-md-20">
-              <a href="page-campaign-details.html" class="btn btn-lg btn-theme-colored2 btn-flat">Discover More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Feature -->
-    <section class="bg-img-cover bg-img-center-top" data-tm-bg-img="images/bg/bg2.jpg">
-      <div class="container pb-0">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="layer-image-wrapper layer-image-current-style2 z-index-1 position-relative">
-                <div class="layer-image">
-                  <img class="img-float-end" src="images/photos/divider-01.jpg" alt="Image">
-                </div>
-                <div class="video-button-style1 m-0">
-                  <div class="play-button">
-                    <span class="play-icon"><i class="fas fa-play"></i></span>
-                  </div>
-                  <a class="hover-link" data-lightbox-gallery="youtube-video" href="http://sc.chinaz.com" title=""></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="ml-70 z-index-1 position-relative ml-lg--0 mt-md-40">
-                <div class="tm-sc-section-title section-typo-light section-title mb-40">
-                  <div class="title-wrapper mb-0">
-                    <div class="title-icon-img">
-                      <img src="images/icons/title-icon.png" alt="Image">
-                    </div>
-                    <h2 class="title">Do You Care About the Earth Like We Do?</h2>
-                    <p class="paragraph mb-0">Lorem ipsum dolor sit amet nsectetur cing elituspe ndisse suscipit sagitis leo sit.</p>
-                  </div>
-                </div>
-                <div class="list-current-style1 mb-lg-30" data-tm-margin-bottom="81">
-                  <ul>
-                    <li><img src="images/icons/list-01.png" alt="Icon">Nsectetur cing elit.</li>
-                    <li><img src="images/icons/list-01.png" alt="Icon">Suspe ndisse suscipit sagittis leo.</li>
-                    <li><img src="images/icons/list-01.png" alt="Icon">Entum estibulum dignissim posuere.</li>
-                  </ul>
-                </div>
-                <div class="raised-amount-current-style1">
-                  <div class="icon">
-                    <img src="images/icons/r01.png" alt="Image">
-                  </div>
-                  <div class="content">
-                    <h2 class="amount text-theme-colored1 mt-0">87,0500</h2>
-                    <h6 class="raised-people m-0">Funds raised by 7020 people</h6>
-                  </div>
-                  <div class="icon-shape tm-animation-floating">
-                    <img src="images/icons/r02.png" alt="Image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <span class="floating-object-1" data-tm-bg-img="images/shape/funfact-01.png" data-tm-width="174" data-tm-height="258" data-tm-top="auto" data-tm-bottom="120" data-tm-left="50" data-tm-opaciy="1"></span>
+        <span class="floating-object-2 tm-animation-slide-horizontal" data-tm-bg-img="images/shape/funfact-02.png" data-tm-width="90" data-tm-height="80" data-tm-top="70" data-tm-bottom="auto" data-tm-left="160" data-tm-opaciy="1"></span>
+        <span class="floating-object-3 tm-animation-scaling" data-tm-bg-img="images/shape/funfact-03.png" data-tm-width="147" data-tm-height="139" data-tm-top="178" data-tm-bottom="auto" data-tm-left="auto" data-tm-right="100" data-tm-opaciy="1"></span>
       </div>
     </section>
 
     <!-- Section: News & Blog -->
-    <section data-tm-bg-color="#fff">
-      <div class="section-content mt-lg--0 pt-lg--0" data-tm-margin-top="-183" data-tm-padding-top="184">
-        <div class="container">
+    <section data-tm-bg-color="#f4f3ef">
+      <div class="container" data-tm-padding-top="240">
         <div class="tm-sc-section-title section-title text-center mb-50">
           <div class="row">
             <div class="col-lg-5 m-auto">
@@ -1228,6 +1298,7 @@
             </div>
           </div>
         </div>
+        <div class="section-content">
           <div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="blog-current-style1 mb-lg-30">
@@ -1247,7 +1318,7 @@
                     </div>
                   </div>
                   <div class="entry-content">
-                    <h6 class="entry-title mt-0"><a href="news-details.html">Eco System Responsible For Wind Generators</a></h6>
+                    <h6 class="entry-title mt-0"><a href="news-details.html">Eco System Responsible For Ecology Space </a></h6>
                     <div class="post-btn-readmore"><a href="news-details.html" class="btn btn-plain-text-with-arrow">Read More</a></div>
                   </div>
                 </article>
@@ -1271,26 +1342,31 @@
                     </div>
                   </div>
                   <div class="entry-content">
-                    <h6 class="entry-title mt-0"><a href="news-details.html">Eco System Responsible For Green Energy</a></h6>
+                    <h6 class="entry-title mt-0"><a href="news-details.html">Your sustainable guide your Green Energy</a></h6>
                     <div class="post-btn-readmore"><a href="news-details.html" class="btn btn-plain-text-with-arrow">Read More</a></div>
                   </div>
                 </article>
               </div>
             </div>
             <div class="col-md-6 col-lg-4">
-              <div class="blog-current-style1 mb-30">
-                <article class="post post-quote">
-                  <div class="entry-content shadow-none border-0 p-0">
-                    <div class="quote-content bg-theme-colored1">
-                      <p class="text-white mb-0">“I think the cost of energy will come down when we make this transition to renewable energy”</p>
+              <div class="blog-current-style1 mb-lg-30">
+                <article class="post">
+                  <div class="entry-header">
+                    <div class="post-thumb">
+                      <div class="post-thumb-inner">
+                        <div class="thumb">
+                          <img class="w-100" src="images/blog/3.jpg" alt="Image">
+                        </div>
+                        <div class="blog-meta">
+                          <span class="admin-type mr-10"><i class="far fa-user-circle"></i>Admin</span>
+                          <span class="comments-type"><i class="far fa-comments"></i>2 Comments</span>
+                        </div>
+                        <div class="meta-date">26 Feb</div>
+                      </div>
                     </div>
                   </div>
-                </article>
-              </div>
-              <div class="blog-current-style1">
-                <article class="post">
-                  <div class="entry-content shadow-none border-0" data-tm-bg-color="#f4f3ef">
-                    <h6 class="entry-title mt-0"><a href="news-details.html">Your sustainable guide your Green Energy</a></h6>
+                  <div class="entry-content">
+                    <h6 class="entry-title mt-0"><a href="news-details.html">Eco System Responsible For Wind Generators</a></h6>
                     <div class="post-btn-readmore"><a href="news-details.html" class="btn btn-plain-text-with-arrow">Read More</a></div>
                   </div>
                 </article>
@@ -1299,29 +1375,23 @@
           </div>
         </div>
       </div>
-      <div class="tm-floating-objects">
-        <span class="floating-object-1" data-tm-bg-img="images/shape/blog-01.png" data-tm-width="185" data-tm-height="253" data-tm-top="auto" data-tm-bottom="-6" data-tm-left="75" data-tm-opacity="1"></span>
-        <span class="floating-object-2 tm-animation-floating" data-tm-bg-img="images/shape/blog-02.png" data-tm-width="90" data-tm-height="80" data-tm-top="440" data-tm-bottom="auto" data-tm-left="180" data-tm-opacity="1"></span>
-        <span class="floating-object-3" data-tm-bg-img="images/shape/blog-03.png" data-tm-width="136" data-tm-height="201" data-tm-top="auto" data-tm-bottom="0" data-tm-right="100" data-tm-left="auto" data-tm-opacity="1"></span>
-      </div>
     </section>
 
-    <!-- Start Divider -->
-    <section data-tm-bg-color="#f4f3ef">
-      <div class="container pt-80 pb-80">
-        <div class="section-content pt-1">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
-                <div class="owl-carousel owl-theme tm-owl-carousel-5col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="120" data-stagepadding="0" data-laptop="4">
-                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/1.png' alt='Image' /> </a></div>
-                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/2.png' alt='Image' /> </a></div>
-                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/3.png' alt='Image' /> </a></div>
-                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/4.png' alt='Image' /> </a></div>
-                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/5.png' alt='Image' /> </a></div>
-                  <div class="item"> <a target="_blank" href="#"> <img src='images/clients/6.png' alt='Image' /> </a></div>
+     <!-- Section: Divider -->
+    <section class="bg-theme-colored1">
+      <div class="section-content">
+        <div class="container pt-110 pb-110">
+          <div class="row align-items-center">
+            <div class="col-lg-9 mb-md-30">
+              <div class="d-block d-lg-flex align-items-center">
+                <div class="d-block d-lg-flex align-items-center justify-content-center mr-30 mr-md--0" data-tm-width="80" data-tm-height="72">
+                  <img src="images/icons/d01.png" alt="Icon">
                 </div>
+                <h2 class="text-white font-weight-900 mt--0 mb--0 mt-md-20">Don't Throw Away Recycle for <br>Another Day!</h2>
               </div>
+            </div>
+            <div class="col-lg-3 text-left text-lg-right mt-md-20">
+              <a href="page-campaign-details.html" class="btn btn-lg btn-theme-colored2 btn-flat">Discover More</a>
             </div>
           </div>
         </div>
@@ -1408,7 +1478,7 @@
               <!-- Mailchimp Subscription Form-->
               <form id="mailchimp-subscription-form10" class="newsletter-form cp-newsletter m-0 p-0">
                 <div class="input-group">
-                  <input type="email" id="mce-EMAIL2" class="form-control font-size-13 border-radius-0" placeholder="Email address" name="EMAIL" value="" data-tm-bg-color="#272f2a" data-tm-height="81px">
+                  <input type="email" id="mce-EMAIL" class="form-control font-size-13 border-radius-0" placeholder="Email address" name="EMAIL" value="" data-tm-bg-color="#272f2a" data-tm-height="81px">
                   <div class="input-group-append tm-sc tm-sc-button">
                     <button type="submit" class="btn text-theme-colored1 btn-sm btn-flat border-0 box-shadow-none font-size-13" data-tm-bg-color="#272f2a" data-tm-height="81px"><i class="fa fa-arrow-right"></i></button>
                   </div>
